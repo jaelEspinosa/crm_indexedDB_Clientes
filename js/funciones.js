@@ -23,16 +23,4 @@ function imprimirAlerta(mensaje, tipo){
         divMensaje.remove();
     }, 2000);
    }
-}
-
-function conectarDB() {
-    const abrirConexion = window.indexedDB.open('crm', 1);
-
-        abrirConexion.onerror = function(){
-            console.log('hubo un error...');
-        };
-        abrirConexion.onsuccess = function(){
-            DB = abrirConexion.result;
-        }   
-
-}
+};
